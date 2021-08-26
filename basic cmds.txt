@@ -1,0 +1,8 @@
+    kubectl get pods
+    kubectl run nginx --image=nginx
+    kubectl get pods -n kube-system 
+    kubectl describe pod newpods-h2tbf - to know which image is used
+    kubectl get pods -o wide = to know which node it is in
+    kubectl run redis --image=redis123 --dry-run=client -o yaml>pod.yml - create pod-def.yml
+    kubectl create -f pod-def.yml
+    kubectl edit pod redis - to edit img name and save it, it will be up and running
